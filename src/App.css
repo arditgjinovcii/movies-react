@@ -1,0 +1,68 @@
+.form-control {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    gap:1rem;
+}
+
+.form-control label {
+    font-size:2rem;
+    margin-top:2rem;
+}
+
+.form-control input {
+    height:1.5rem;
+    width:300px;
+}
+
+.form-control button,
+.form-control input {
+    background: transparent;
+    color:#fff;
+    padding:0.5rem 2.5rem;
+    border:1px solid white;
+    border-radius:9px;
+}
+
+.card-container {
+    display: grid;
+    margin:0 auto;
+    margin-top:3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    max-width: 1200px;
+
+}
+
+.card {
+    position:relative;
+    height: 400px;
+
+}
+
+.card img {
+    width:100%;
+    height: 100%;
+}
+
+.card h2 {
+    display: none;
+}
+
+.card img:hover  {
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.card:hover h2{
+    display: block;
+    position:absolute;
+    left: 1.5rem;
+    bottom:2rem;
+    transition: all 1s ease;
+}
